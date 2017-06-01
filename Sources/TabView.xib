@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -46,7 +46,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pCA-AJ-Zrg">
-                    <rect key="frame" x="110" y="78" width="100" height="2"/>
+                    <rect key="frame" x="110" y="73" width="100" height="2"/>
                     <color key="backgroundColor" red="0.41176470588235292" green="0.71372549019607845" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="2" id="M76-sL-SLw"/>
@@ -60,7 +60,7 @@
                 <constraint firstAttribute="trailing" secondItem="Xf0-gn-U1c" secondAttribute="trailing" id="Ihq-m6-7H1"/>
                 <constraint firstAttribute="trailing" secondItem="v01-jI-XsV" secondAttribute="trailing" id="JIQ-ij-hDt"/>
                 <constraint firstItem="pCA-AJ-Zrg" firstAttribute="centerX" secondItem="ht5-fO-CtR" secondAttribute="centerX" id="JYP-Gc-rlJ"/>
-                <constraint firstAttribute="bottom" secondItem="pCA-AJ-Zrg" secondAttribute="bottom" id="QxU-8o-gpy"/>
+                <constraint firstAttribute="bottom" secondItem="pCA-AJ-Zrg" secondAttribute="bottom" constant="5" id="QxU-8o-gpy"/>
                 <constraint firstItem="v01-jI-XsV" firstAttribute="leading" secondItem="ht5-fO-CtR" secondAttribute="leading" id="RZL-6S-QKj"/>
                 <constraint firstAttribute="bottom" secondItem="v01-jI-XsV" secondAttribute="bottom" id="Wxt-ZO-G4P"/>
                 <constraint firstItem="Xf0-gn-U1c" firstAttribute="leading" secondItem="ht5-fO-CtR" secondAttribute="leading" id="k7q-kD-VGm"/>
