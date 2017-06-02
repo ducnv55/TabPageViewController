@@ -29,9 +29,11 @@ class ViewController: UIViewController {
         tc.tabItems = [(vc1, "First"), (vc2, "Second")]
         var option = TabPageOption()
         option.tabWidth = view.frame.width / CGFloat(tc.tabItems.count)
-        option.hidesTopViewOnSwipeType = .all
+        option.hidesTopViewOnSwipeType = .tabBar
+        option.hidesTabBarOnSwitchTab = true
         option.navigationBarBackgroundColor = UIColor(red: 0, green: 149/255, blue: 135/255, alpha: 1.0)
         option.isTranslucent = false
+        option.tabBackgroundColor = UIColor(red: 0, green: 149/255, blue: 135/255, alpha: 1.0)
         tc.option = option
         
         navigationController?.pushViewController(tc, animated: true)

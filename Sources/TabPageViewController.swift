@@ -63,6 +63,7 @@ open class TabPageViewController: UIPageViewController {
         super.viewDidAppear(animated)
 
         updateNavigationBar()
+        updateTabBarOnSwitching()
         tabView.layouted = true
     }
 
@@ -134,6 +135,16 @@ extension TabPageViewController {
             navigationBar.shadowImage = UIImage()
             navigationBar.setBackgroundImage(option.navigationBarBackgroundImage, for: .default)
             navigationBar.isTranslucent = option.isTranslucent
+        }
+    }
+    
+    /**
+     Update tabBar when switching tab
+     */
+    
+    fileprivate func updateTabBarOnSwitching() {
+        if option.hidesTabBarOnSwitchTab {
+            updateTabBarOrigin(hidden: false)
         }
     }
 
@@ -255,6 +266,7 @@ extension TabPageViewController {
         default:
             break
         }
+        
         if statusView == nil {
             setupStatusView()
         }
@@ -336,7 +348,7 @@ extension TabPageViewController: UIPageViewControllerDelegate {
     public func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]) {
         shouldScrollCurrentBar = true
         tabView.scrollToHorizontalCenter()
-
+        updateTabBarOnSwitching()
         // Order to prevent the the hit repeatedly during animation
         tabView.updateCollectionViewUserInteractionEnabled(false)
     }
